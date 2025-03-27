@@ -7,7 +7,7 @@ function App() {
   const [articles, setArticles] = useState([]);
   const fetchNews = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/news");
+      const response = await axios.get("http://localhost:8000/news");
       setArticles(response.data.articles);
     } catch (error) {
       console.error(error);
